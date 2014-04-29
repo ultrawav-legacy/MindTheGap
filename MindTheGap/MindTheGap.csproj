@@ -101,7 +101,31 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\appbar.clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clipboard.variant.edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.man.suitcase.run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.smiley.happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.battery.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.group.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
