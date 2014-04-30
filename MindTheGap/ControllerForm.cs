@@ -11,10 +11,11 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace MindTheGap
 {
-    public partial class ControllerForm: MetroFramework.Forms.MetroForm
+    public partial class ControllerForm: MetroForm
     {
         public ControllerForm()
         {
@@ -93,6 +94,12 @@ namespace MindTheGap
 
         private void metroTile7_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            MetroFramework.MetroMessageBox.Show(ControllerForm.ActiveForm, "Do you like this metro message box?", "Metro Title", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
 
         }
 

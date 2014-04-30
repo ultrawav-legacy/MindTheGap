@@ -46,10 +46,10 @@ namespace MindTheGap
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
+            this.metroStyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,6 +157,7 @@ namespace MindTheGap
             this.metroTile8.Location = new System.Drawing.Point(99, 195);
             this.metroTile8.Name = "metroTile8";
             this.metroTile8.Size = new System.Drawing.Size(90, 42);
+            this.metroTile8.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTile8.TabIndex = 13;
             this.metroTile8.Text = "전화통화";
             this.metroTile8.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -244,6 +245,7 @@ namespace MindTheGap
             this.metroTile5.Location = new System.Drawing.Point(99, 99);
             this.metroTile5.Name = "metroTile5";
             this.metroTile5.Size = new System.Drawing.Size(90, 90);
+            this.metroTile5.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTile5.TabIndex = 8;
             this.metroTile5.Text = "외근";
             this.metroTile5.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -262,6 +264,7 @@ namespace MindTheGap
             this.metroTile3.Location = new System.Drawing.Point(3, 99);
             this.metroTile3.Name = "metroTile3";
             this.metroTile3.Size = new System.Drawing.Size(90, 90);
+            this.metroTile3.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTile3.TabIndex = 7;
             this.metroTile3.Text = "회의중";
             this.metroTile3.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -289,6 +292,7 @@ namespace MindTheGap
             this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.metroTile1.UseSelectable = true;
             this.metroTile1.UseTileImage = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
             // metroLabel4
             // 
@@ -309,9 +313,10 @@ namespace MindTheGap
             this.metroLabel5.Text = "aaaa";
             this.metroLabel5.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // metroStyleManager1
+            // metroStyleManager
             // 
-            this.metroStyleManager1.Owner = this;
+            this.metroStyleManager.Owner = this;
+            this.metroStyleManager.Style = MetroFramework.MetroColorStyle.Orange;
             // 
             // pictureBox1
             // 
@@ -341,7 +346,7 @@ namespace MindTheGap
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Load += new System.EventHandler(this.ControllerForm_Load);
             this.metroPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -364,10 +369,10 @@ namespace MindTheGap
         private MetroFramework.Controls.MetroTile metroTile7;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroLabel metroLabel5;
-        private MetroFramework.Components.MetroStyleManager metroStyleManager1;
         private MetroFramework.Controls.MetroTile metroTile8;
         private MetroFramework.Controls.MetroTile metroTile9;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public MetroFramework.Components.MetroStyleManager metroStyleManager;
 
 
     }
